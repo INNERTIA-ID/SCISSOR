@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="far fa-envelope"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li data-color="blue"><a href="profile_index.html"><i class="fas fa-home"></i>
+                            <span>Profile</span></a></li>
+                    <li data-color="purple"><a href="profile_projects.html"><i class="fas fa-code-branch"></i>
+                            <span>Projects</span></a></li>
+                    <li data-color="cyan"><a href="profile_account.html"><i class="fas fa-user-cog"></i>
+                            <span>Account</span></a></li>
+                    <li data-color="pink"><a href="profile_support.html"><i class="fas fa-heart"></i> <span>Support
+                                Me</span></a></li>
+                    <li data-color="orange"><a href="profile_contact.html"><i class="fas fa-envelope"></i> <span>Contact
+                                Me</span></a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-right">
+                    <div class="date">
+                        <i class="fas fa-calendar"></i>
+                        <span id="currentDate">3 August 2021</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-bell notification-icon" id="notificationBell">
+                            <span class="notification-badge">3</span>
+                        </i>
+                        <i class="fas fa-moon theme-toggle" id="themeToggle"></i>
+                    </div>
+                    <div class="profile">
+                        <img src="https://i.pinimg.com/736x/fb/de/09/fbde0979463e28d15096483455a08354.jpg"
+                            alt="Profile">
+                        <div>
+                            <span class="profile-name">DIMAS DK</span>
+                            <span class="profile-title">Full Stack Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="contact-hero">
+                <h1><i class="fas fa-envelope-open"></i> Let's Get In Touch!</h1>
+                <p>Have a project in mind or just want to say hi? I'd love to hear from you!</p>
+            </section>
+
+            <div class="contact-container">
+                <div class="contact-info-section">
+                    <div class="contact-info-card">
+                        <div class="contact-icon blue">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Me</h3>
+                        <p>dimas.kurnia829@smk.belajar.id</p>
+                        <a href="mailto:dimas.kurnia829@smk.belajar.id?subject=Hello%20Dimas&body=Dear%20Dimas,%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20with%20you.%0D%0A%0D%0ABest%20regards,"
+                            class="contact-link">
+                            Send Email <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon green">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Me</h3>
+                        <p>+62 (085) 648-32861</p>
+                        <a href="tel:+6285648832861" class="contact-link">Give a Call <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon purple">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Jakarta,Id<br>Indonesia</p>
+                        <a href="#" class="contact-link">View Map <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon pink">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Availability</h3>
+                        <p>Monday only<br>9:00 AM - 6:00 PM WIB</p>
+                        <a href="#" class="contact-link">Schedule Call <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <div class="form-header">
+                        <h2><i class="fas fa-paper-plane"></i> Send Me a Message</h2>
+                        <p>Fill out the form below and I'll get back to you as soon as possible</p>
+                    </div>
+
+                    <div class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-user"></i> DIMAS DK *</label>
+                                <input type="text" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-envelope"></i> Your Email *</label>
+                                <input type="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-phone"></i> Phone Number</label>
+                                <input type="tel" placeholder="+1 234 567 8900">
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-tag"></i> Subject *</label>
+                                <select required>
+                                    <option value="">Select a subject</option>
+                                    <option>General Inquiry</option>
+                                    <option>Project Proposal</option>
+                                    <option>Collaboration</option>
+                                    <option>Job Opportunity</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-comment"></i> Your Message *</label>
+                            <textarea rows="6" placeholder="Tell me about your project or inquiry..."
+                                required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                <span>I agree to the privacy policy and terms of service</span>
+                            </label>
+                        </div>
+
+                        <button class="btn-submit" onclick="submitContactForm()">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="social-connect">
+                <h2 class="section-title">
+                    <i class="fas fa-share-alt"></i> Connect With Me
+                </h2>
+                <div class="social-cards">
+                    <a href="https://github.com/INNERTIA-ID" target="_blank" rel="noopener noreferrer"
+                        class="social-card github">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>INNERTIA | DK / DK ID</p>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="social-card linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>DIMAS KURNIA SANDI</p>
+                        </div>
+                    </a>
+                    <a href="#" class="social-card twitter">
+                        <i class="fab fa-twitter"></i>
+                        <div>
+                            <h3>Twitter</h3>
+                            <p>ID_ZZH</p>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/teatime_innit/" target="_blank" rel="noopener noreferrer"
+                        class="social-card instagram">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h3>Instagram</h3>
+                            <p>@Teatime_innit</p>
+                        </div>
+                    </a>
+                    <a href="https://discordapp.com/users/1441321778260738078" target="_blank" rel="noopener noreferrer"
+                        class="social-card discord">
+                        <i class="fab fa-discord"></i>
+                        <div>
+                            <h3>Discord</h3>
+                            <p>DKZZHR🍀</p>
+                        </div>
+                    </a>
+                    <a href="#" class="social-card youtube">
+                        <i class="fab fa-youtube"></i>
+                        <div>
+                            <h3>YouTube</h3>
+                            <p>DK PROJECT</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2 class="section-title">
+                    <i class="fas fa-question-circle"></i> Frequently Asked Questions
+                </h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-down"></i>
+                            <h3>What is your typical response time?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>I typically respond to all inquiries within 24-48 hours during business days. For urgent
+                                matters, please mention it in your message.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-down"></i>
+                            <h3>Do you work on freelance projects?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! I'm always open to interesting freelance opportunities. Please share details about
+                                your project and timeline.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-down"></i>
+                            <h3>What services do you offer?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>I specialize in full-stack web development, UI/UX design, and technical consulting. I
+                                work with modern technologies like React, Node.js, and more.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-down"></i>
+                            <h3>Can we schedule a video call?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! Once we connect via email, we can schedule a Zoom or Google Meet call to
+                                discuss your project in detail.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

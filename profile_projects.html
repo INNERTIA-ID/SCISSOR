@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-code-branch"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li data-color="blue"><a href="profile_index.html"><i class="fas fa-home"></i> <span>Profile</span></a></li>
+                    <li class="active" data-color="purple"><a href="profile_projects.html"><i class="fas fa-code-branch"></i> <span>Projects</span></a></li>
+                    <li data-color="cyan"><a href="profile_account.html"><i class="fas fa-user-cog"></i> <span>Account</span></a></li>
+                    <li data-color="pink"><a href="profile_support.html"><i class="fas fa-heart"></i> <span>Support Me</span></a></li>
+                    <li data-color="orange"><a href="profile_contact.html"><i class="fas fa-envelope"></i> <span>Contact Me</span></a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search projects...">
+                </div>
+                <div class="header-right">
+                    <div class="date">
+                        <i class="fas fa-calendar"></i>
+                        <span id="currentDate">3 August 2021</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-bell notification-icon" id="notificationBell">
+                            <span class="notification-badge">3</span>
+                        </i>
+                        <i class="fas fa-moon theme-toggle" id="themeToggle"></i>
+                    </div>
+                    <div class="profile">
+                        <img src="https://i.pinimg.com/736x/fb/de/09/fbde0979463e28d15096483455a08354.jpg" alt="Profile">
+                        <div>
+                            <span class="profile-name">DIMAS DK</span>
+                            <span class="profile-title">Full Stack Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="page-header">
+                <h1><i class="fas fa-code-branch"></i> My Projects</h1>
+                <p>Explore my latest work and creative experiments</p>
+            </section>
+
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All Projects
+                </button>
+                <button class="filter-btn" data-filter="web">
+                    <i class="fas fa-globe"></i> Web Apps
+                </button>
+                <button class="filter-btn" data-filter="mobile">
+                    <i class="fas fa-mobile-alt"></i> Mobile
+                </button>
+                <button class="filter-btn" data-filter="design">
+                    <i class="fas fa-palette"></i> Design
+                </button>
+            </div>
+
+            <section class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://megapenerjemah.com/wp-content/uploads/2024/04/platform-e-commerce-bisnis-1.jpg" alt="Project 1">
+                        <div class="project-overlay">
+                            <button class="btn-view"><i class="fas fa-eye"></i> View</button>
+                            <button class="btn-github"><i class="fab fa-github"></i> Code</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag blue">React</span>
+                            <span class="tag green">Node.js</span>
+                            <span class="tag purple">MongoDB</span>
+                        </div>
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured online shopping platform with payment integration and admin dashboard.</p>
+                        <div class="project-footer">
+                            <span class="project-date"><i class="fas fa-calendar"></i> Jan 2024</span>
+                            <span class="project-likes"><i class="fas fa-heart"></i> 234</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://images.ctfassets.net/lzny33ho1g45/3L77mMruOrEOWxyDmcKkEp/2e1d7aff0d998602ddaa18fad2bb75fb/image2.jpg" alt="Project 2">
+                        <div class="project-overlay">
+                            <button class="btn-view"><i class="fas fa-eye"></i> View</button>
+                            <button class="btn-github"><i class="fab fa-github"></i> Code</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag purple">React Native</span>
+                            <span class="tag orange">Firebase</span>
+                        </div>
+                        <h3>Fitness Tracker App</h3>
+                        <p>Mobile app to track workouts, calories, and fitness goals with beautiful UI.</p>
+                        <div class="project-footer">
+                            <span class="project-date"><i class="fas fa-calendar"></i> Dec 2023</span>
+                            <span class="project-likes"><i class="fas fa-heart"></i> 189</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://www.inetsoft.com/images/website/social-media-analytics-dashboard.png" alt="Project 3">
+                        <div class="project-overlay">
+                            <button class="btn-view"><i class="fas fa-eye"></i> View</button>
+                            <button class="btn-github"><i class="fab fa-github"></i> Code</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag cyan">Vue.js</span>
+                            <span class="tag blue">TypeScript</span>
+                            <span class="tag green">Express</span>
+                        </div>
+                        <h3>Social Media Dashboard</h3>
+                        <p>Analytics dashboard for managing multiple social media accounts in one place.</p>
+                        <div class="project-footer">
+                            <span class="project-date"><i class="fas fa-calendar"></i> Nov 2023</span>
+                            <span class="project-likes"><i class="fas fa-heart"></i> 312</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f4d11b222383449.67e4d3f6ab80f.jpg" alt="Project 4">
+                        <div class="project-overlay">
+                            <button class="btn-view"><i class="fas fa-eye"></i> View</button>
+                            <button class="btn-github"><i class="fab fa-github"></i> Code</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag pink">Figma</span>
+                            <span class="tag purple">Illustrator</span>
+                        </div>
+                        <h3>Brand Identity Design</h3>
+                        <p>Complete brand identity package including logo, color palette, and guidelines.</p>
+                        <div class="project-footer">
+                            <span class="project-date"><i class="fas fa-calendar"></i> Oct 2023</span>
+                            <span class="project-likes"><i class="fas fa-heart"></i> 276</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://www.proofhub.com/articles/wp-content/uploads/2024/09/Task-board-view-1024x576.jpg" alt="Project 5">
+                        <div class="project-overlay">
+                            <button class="btn-view"><i class="fas fa-eye"></i> View</button>
+                            <button class="btn-github"><i class="fab fa-github"></i> Code</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag green">Next.js</span>
+                            <span class="tag blue">Tailwind</span>
+                            <span class="tag purple">PostgreSQL</span>
+                        </div>
+                        <h3>Task Management Tool</h3>
+                        <p>Collaborative project management platform with real-time updates and team chat.</p>
+                        <div class="project-footer">
+                            <span class="project-date"><i class="fas fa-calendar"></i> Sep 2023</span>
+                            <span class="project-likes"><i class="fas fa-heart"></i> 198</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://imgproxy.epicpxls.com/MhZHybSVTPy3zQvm8ZQfVQ3ubw2N73rxiWO6RWxGvyY/rs:fill:409:307:0/g:no/aHR0cHM6Ly9pdGVt/cy5lcGljcHhscy5j/b20vdXBsb2Fkcy9w/aG90by80MDI2NTc4/MGUyYTcxNTVmZTli/ODdmMmVkOTM3MmQw/Yg.jpg" alt="Project 6">
+                        <div class="project-overlay">
+                            <button class="btn-view"><i class="fas fa-eye"></i> View</button>
+                            <button class="btn-github"><i class="fab fa-github"></i> Code</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag orange">Flutter</span>
+                            <span class="tag blue">API</span>
+                        </div>
+                        <h3>Weather Forecast App</h3>
+                        <p>Beautiful weather app with detailed forecasts and interactive maps.</p>
+                        <div class="project-footer">
+                            <span class="project-date"><i class="fas fa-calendar"></i> Aug 2023</span>
+                            <span class="project-likes"><i class="fas fa-heart"></i> 145</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

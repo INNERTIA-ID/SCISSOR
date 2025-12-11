@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Me - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-heart"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li data-color="blue"><a href="profile_index.html"><i class="fas fa-home"></i> <span>Profile</span></a></li>
+                    <li data-color="purple"><a href="profile_projects.html"><i class="fas fa-code-branch"></i> <span>Projects</span></a></li>
+                    <li data-color="cyan"><a href="profile_account.html"><i class="fas fa-user-cog"></i> <span>Account</span></a></li>
+                    <li class="active" data-color="pink"><a href="profile_support.html"><i class="fas fa-heart"></i> <span>Support Me</span></a></li>
+                    <li data-color="orange"><a href="profile_contact.html"><i class="fas fa-envelope"></i> <span>Contact Me</span></a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-right">
+                    <div class="date">
+                        <i class="fas fa-calendar"></i>
+                        <span id="currentDate">3 August 2021</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-bell notification-icon" id="notificationBell">
+                            <span class="notification-badge">3</span>
+                        </i>
+                        <i class="fas fa-moon theme-toggle" id="themeToggle"></i>
+                    </div>
+                    <div class="profile">
+                        <img src="https://i.pinimg.com/736x/fb/de/09/fbde0979463e28d15096483455a08354.jpg" alt="Profile">
+                        <div>
+                            <span class="profile-name">DIMAS DK</span>
+                            <span class="profile-title">Full Stack Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="support-hero">
+                <div class="support-content">
+                    <h1 class="gradient-text"><i class="fas fa-heart pulse"></i> Support My Work</h1>
+                    <p>If you enjoy my content and projects, consider supporting me! Your contribution helps me create more amazing content and open-source projects.</p>
+                </div>
+            </section>
+
+            <section class="support-stats">
+                <div class="support-stat">
+                    <i class="fas fa-users"></i>
+                    <h3>125</h3>
+                    <p>Supporters</p>
+                </div>
+                <div class="support-stat">
+                    <i class="fas fa-coffee"></i>
+                    <h3>$2,450</h3>
+                    <p>This Month</p>
+                </div>
+                <div class="support-stat">
+                    <i class="fas fa-star"></i>
+                    <h3>15</h3>
+                    <p>Active Projects</p>
+                </div>
+            </section>
+
+            <section class="support-tiers">
+                <h2 class="section-title">
+                    <i class="fas fa-crown"></i> Support Tiers
+                </h2>
+                
+                <div class="tiers-grid">
+                    <div class="tier-card basic">
+                        <div class="tier-badge">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h3>Buy Me a Coffee</h3>
+                        <div class="tier-price">
+                            <span class="currency">$</span>
+                            <span class="amount">5</span>
+                            <span class="period">one-time</span>
+                        </div>
+                        <ul class="tier-features">
+                            <li><i class="fas fa-check"></i> Support my work</li>
+                            <li><i class="fas fa-check"></i> My eternal gratitude</li>
+                            <li><i class="fas fa-check"></i> Name in supporters list</li>
+                        </ul>
+                        <button class="tier-button">
+                            <i class="fas fa-coffee"></i> Buy Coffee
+                        </button>
+                    </div>
+
+                    <div class="tier-card pro featured">
+                        <div class="tier-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="popular-badge">Most Popular</div>
+                        <h3>Monthly Supporter</h3>
+                        <div class="tier-price">
+                            <span class="currency">$</span>
+                            <span class="amount">15</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="tier-features">
+                            <li><i class="fas fa-check"></i> All previous benefits</li>
+                            <li><i class="fas fa-check"></i> Early access to projects</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Exclusive updates</li>
+                            <li><i class="fas fa-check"></i> Discord community access</li>
+                        </ul>
+                        <button class="tier-button">
+                            <i class="fas fa-rocket"></i> Become a Supporter
+                        </button>
+                    </div>
+
+                    <div class="tier-card premium">
+                        <div class="tier-badge">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Premium Sponsor</h3>
+                        <div class="tier-price">
+                            <span class="currency">$</span>
+                            <span class="amount">50</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="tier-features">
+                            <li><i class="fas fa-check"></i> All previous benefits</li>
+                            <li><i class="fas fa-check"></i> 1-on-1 mentorship (1hr/month)</li>
+                            <li><i class="fas fa-check"></i> Custom project requests</li>
+                            <li><i class="fas fa-check"></i> Logo on my website</li>
+                            <li><i class="fas fa-check"></i> Featured in README files</li>
+                            <li><i class="fas fa-check"></i> Commercial license access</li>
+                        </ul>
+                        <button class="tier-button">
+                            <i class="fas fa-crown"></i> Become a Sponsor
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="payment-methods">
+                <h2 class="section-title">
+                    <i class="fas fa-credit-card"></i> Payment Methods
+                </h2>
+                <div class="payment-grid">
+                    <div class="payment-card">
+                        <i class="fab fa-paypal"></i>
+                        <h3>PayPal</h3>
+                        <p>Quick and secure payments</p>
+                        <button class="btn-payment">Donate via PayPal</button>
+                    </div>
+                    <div class="payment-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub Sponsors</h3>
+                        <p>Support through GitHub</p>
+                        <button class="btn-payment">Sponsor on GitHub</button>
+                    </div>
+                    <div class="payment-card">
+                        <i class="fab fa-patreon"></i>
+                        <h3>Patreon</h3>
+                        <p>Monthly subscription</p>
+                        <button class="btn-payment">Join Patreon</button>
+                    </div>
+                    <div class="payment-card">
+                        <i class="fab fa-bitcoin"></i>
+                        <h3>Crypto</h3>
+                        <p>Bitcoin, Ethereum & more</p>
+                        <button class="btn-payment">Crypto Address</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="supporters-section">
+                <h2 class="section-title">
+                    <i class="fas fa-heart"></i> Top Supporters
+                </h2>
+                <div class="supporters-grid">
+                    <div class="supporter-card">
+                        <img src="https://via.placeholder.com/80x80/3b82f6/ffffff?text=JS" alt="Supporter">
+                        <h3>John Smith</h3>
+                        <p class="supporter-tier">Premium Sponsor</p>
+                        <div class="supporter-amount">$50/mo</div>
+                    </div>
+                    <div class="supporter-card">
+                        <img src="https://via.placeholder.com/80x80/ec4899/ffffff?text=ED" alt="Supporter">
+                        <h3>Emily Davis</h3>
+                        <p class="supporter-tier">Monthly Supporter</p>
+                        <div class="supporter-amount">$15/mo</div>
+                    </div>
+                    <div class="supporter-card">
+                        <img src="https://via.placeholder.com/80x80/10b981/ffffff?text=MJ" alt="Supporter">
+                        <h3>Michael Johnson</h3>
+                        <p class="supporter-tier">Monthly Supporter</p>
+                        <div class="supporter-amount">$15/mo</div>
+                    </div>
+                    <div class="supporter-card">
+                        <img src="https://via.placeholder.com/80x80/8b5cf6/ffffff?text=SW" alt="Supporter">
+                        <h3>Sarah Wilson</h3>
+                        <p class="supporter-tier">Coffee Supporter</p>
+                        <div class="supporter-amount">$5</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="impact-section">
+                <h2 class="section-title">
+                    <i class="fas fa-chart-line"></i> Your Support Makes an Impact
+                </h2>
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon blue">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Open Source</h3>
+                        <p>Supporting open-source projects that benefit the entire developer community</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon green">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Free Tutorials</h3>
+                        <p>Creating comprehensive tutorials and educational content for developers</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon purple">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>New Tools</h3>
+                        <p>Building innovative tools and utilities that solve real-world problems</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

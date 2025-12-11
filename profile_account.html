@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li data-color="blue"><a href="profile_index.html"><i class="fas fa-home"></i> <span>Profile</span></a></li>
+                    <li data-color="purple"><a href="profile_projects.html"><i class="fas fa-code-branch"></i> <span>Projects</span></a></li>
+                    <li class="active" data-color="cyan"><a href="profile_account.html"><i class="fas fa-user-cog"></i> <span>Account</span></a></li>
+                    <li data-color="pink"><a href="profile_support.html"><i class="fas fa-heart"></i> <span>Support Me</span></a></li>
+                    <li data-color="orange"><a href="profile_contact.html"><i class="fas fa-envelope"></i> <span>Contact Me</span></a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search settings...">
+                </div>
+                <div class="header-right">
+                    <div class="date">
+                        <i class="fas fa-calendar"></i>
+                        <span id="currentDate">3 August 2021</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-bell notification-icon" id="notificationBell">
+                            <span class="notification-badge">3</span>
+                        </i>
+                        <i class="fas fa-moon theme-toggle" id="themeToggle"></i>
+                    </div>
+                    <div class="profile">
+                        <img src="https://i.pinimg.com/736x/fb/de/09/fbde0979463e28d15096483455a08354.jpg" alt="Profile">
+                        <div>
+                            <span class="profile-name">DIMAS DK</span>
+                            <span class="profile-title">Full Stack Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="page-header">
+                <h1><i class="fas fa-user-cog"></i> Account Settings</h1>
+                <p>Manage your profile and preferences</p>
+            </section>
+
+            <div class="account-container">
+                <div class="account-sidebar">
+                    <button class="account-tab active" data-tab="profile">
+                        <i class="fas fa-user"></i> Profile Info
+                    </button>
+                    <button class="account-tab" data-tab="security">
+                        <i class="fas fa-shield-alt"></i> Security
+                    </button>
+                    <button class="account-tab" data-tab="preferences">
+                        <i class="fas fa-sliders-h"></i> Preferences
+                    </button>
+                    <button class="account-tab" data-tab="notifications">
+                        <i class="fas fa-bell"></i> Notifications
+                    </button>
+                </div>
+
+                <div class="account-content">
+                    <!-- Profile Info Tab -->
+                    <div class="tab-content active" id="profile">
+                        <div class="settings-section">
+                            <h2><i class="fas fa-user"></i> Profile Information</h2>
+                            
+                            <div class="profile-photo-section">
+                                <div class="photo-preview">
+                                    <img src="https://fwmedia.fandomwire.com/wp-content/uploads/2025/06/10051800/to-be-hero-x-8-1.jpg?width=800&height=500&quality=85&sharpen=true&format=webp&aspect_ratio=800%3A500&crop=center" alt="Profile Photo" id="profilePhotoPreview">
+                                    <div class="photo-overlay">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                </div>
+                                <div class="photo-actions">
+                                    <button class="btn-primary">
+                                        <i class="fas fa-upload"></i> Upload Photo
+                                    </button>
+                                    <button class="btn-secondary">
+                                        <i class="fas fa-trash"></i> Remove
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label><i class="fas fa-user"></i> Full Name</label>
+                                    <input type="text" placeholder="Enter DIMAS DK" value="DIMAS DK">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="fas fa-envelope"></i> Email Address</label>
+                                    <input type="email" placeholder="your.email@example.com" value="your.email@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="fas fa-phone"></i> Phone Number</label>
+                                    <input type="tel" placeholder="+1 234 567 890" value="+1 234 567 890">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="fas fa-briefcase"></i> Job Title</label>
+                                    <input type="text" placeholder="Full Stack Developer" value="Full Stack Developer">
+                                </div>
+                                <div class="form-group full-width">
+                                    <label><i class="fas fa-info-circle"></i> Bio</label>
+                                    <textarea rows="4" placeholder="Tell us about yourself...">Passionate developer who loves creating amazing web experiences.</textarea>
+                                </div>
+                            </div>
+
+                            <button class="btn-save">
+                                <i class="fas fa-check"></i> Save Changes
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Security Tab -->
+                    <div class="tab-content" id="security">
+                        <div class="settings-section">
+                            <h2><i class="fas fa-shield-alt"></i> Security Settings</h2>
+                            
+                            <div class="security-card">
+                                <div class="security-item">
+                                    <div>
+                                        <h3><i class="fas fa-key"></i> Change Password</h3>
+                                        <p>Update your password regularly to keep your account secure</p>
+                                    </div>
+                                    <button class="btn-primary">Change</button>
+                                </div>
+                            </div>
+
+                            <div class="security-card">
+                                <div class="security-item">
+                                    <div>
+                                        <h3><i class="fas fa-mobile-alt"></i> Two-Factor Authentication</h3>
+                                        <p>Add an extra layer of security to your account</p>
+                                    </div>
+                                    <label class="toggle-switch">
+                                        <input type="checkbox">
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="security-card">
+                                <div class="security-item">
+                                    <div>
+                                        <h3><i class="fas fa-laptop"></i> Active Sessions</h3>
+                                        <p>Manage your active login sessions</p>
+                                    </div>
+                                    <button class="btn-secondary">View All</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Preferences Tab -->
+                    <div class="tab-content" id="preferences">
+                        <div class="settings-section">
+                            <h2><i class="fas fa-sliders-h"></i> Preferences</h2>
+                            
+                            <div class="preference-item">
+                                <div>
+                                    <h3><i class="fas fa-moon"></i> Dark Mode</h3>
+                                    <p>Switch between light and dark themes</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="darkModeToggle">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="preference-item">
+                                <div>
+                                    <h3><i class="fas fa-language"></i> Language</h3>
+                                    <p>Choose your preferred language</p>
+                                </div>
+                                <select class="select-input">
+                                    <option>English</option>
+                                    <option>Spanish</option>
+                                    <option>French</option>
+                                    <option>German</option>
+                                </select>
+                            </div>
+
+                            <div class="preference-item">
+                                <div>
+                                    <h3><i class="fas fa-clock"></i> Timezone</h3>
+                                    <p>Set your local timezone</p>
+                                </div>
+                                <select class="select-input">
+                                    <option>UTC-05:00 (EST)</option>
+                                    <option>UTC-08:00 (PST)</option>
+                                    <option>UTC+00:00 (GMT)</option>
+                                    <option>UTC+01:00 (CET)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notifications Tab -->
+                    <div class="tab-content" id="notifications">
+                        <div class="settings-section">
+                            <h2><i class="fas fa-bell"></i> Notification Settings</h2>
+                            
+                            <div class="notification-group">
+                                <h3>Email Notifications</h3>
+                                <div class="notification-item">
+                                    <div>
+                                        <h4>Project Updates</h4>
+                                        <p>Receive updates about your projects</p>
+                                    </div>
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" checked>
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                </div>
+                                <div class="notification-item">
+                                    <div>
+                                        <h4>New Messages</h4>
+                                        <p>Get notified when you receive new messages</p>
+                                    </div>
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" checked>
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="notification-group">
+                                <h3>Push Notifications</h3>
+                                <div class="notification-item">
+                                    <div>
+                                        <h4>Browser Notifications</h4>
+                                        <p>Receive notifications in your browser</p>
+                                    </div>
+                                    <label class="toggle-switch">
+                                        <input type="checkbox">
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
