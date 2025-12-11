@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To My Portofolio DIMAS DK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .welcome-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(135deg, #0a1929 0%, #0d3a52 50%, #0e7490 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 9999;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .welcome-container.fade-out {
+            animation: fadeOut 1s ease-out forwards;
+        }
+
+        @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
+
+        .logo-animation {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin-bottom: 30px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .logo-circle {
+            width: 100%;
+            height: 100%;
+            border: 4px solid #06b6d4;
+            border-radius: 50%;
+            position: absolute;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.7; }
+        }
+
+        .logo-circle:nth-child(2) { animation-delay: .5s; border-color: #0ea5e9; }
+        .logo-circle:nth-child(3) { animation-delay: 1s; border-color: #3b82f6; }
+
+        .logo-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 72px;
+            color: #06b6d4;
+            animation: rotate 4s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        .welcome-text {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .welcome-text h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            animation: slideInFromLeft 1s ease-out;
+            background: linear-gradient(135deg, #06b6d4, #3b82f6, #8b5cf6);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes slideInFromLeft {
+            from { transform: translateX(-100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        .welcome-text p {
+            font-size: 24px;
+            animation: slideInFromRight 1s ease-out;
+            color: #94a3b8;
+        }
+
+        @keyframes slideInFromRight {
+            from { transform: translateX(100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        .loading-bar {
+            width: 300px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 30px;
+        }
+
+        .loading-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #06b6d4, #3b82f6, #8b5cf6);
+            border-radius: 10px;
+            animation: loading 3s ease-in-out forwards;
+        }
+
+        @keyframes loading { from { width: 0%; } to { width: 100%; } }
+
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: particleFloat 8s linear infinite;
+        }
+
+        @keyframes particleFloat {
+            0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.6; }
+            100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
+        }
+
+        .skip-btn {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            padding: 12px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #06b6d4;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+        .skip-btn:hover {
+            background: #06b6d4;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- WELCOME SCREEN -->
+    <div class="welcome-container" id="welcomeScreen">
+
+        <div class="particles" id="particles"></div>
+
+        <div class="logo-animation">
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+
+            <div class="logo-content">
+                <i class="fas fa-code"></i>
+            </div>
+        </div>
+
+        <div class="welcome-text">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Loading amazing experience...</p>
+        </div>
+
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+
+        <button class="skip-btn" onclick="skipIntro()">
+            Skip Intro <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <script>
+        // Create Particles
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 8 + 's';
+            particle.style.animationDuration = (Math.random() * 4 + 6) + 's';
+            particlesContainer.appendChild(particle);
+        }
+
+        // Auto transition
+        setTimeout(() => transition(), 3500);
+
+        function skipIntro() {
+            transition();
+        }
+
+        function transition() {
+            const welcomeScreen = document.getElementById('welcomeScreen');
+
+            welcomeScreen.classList.add('fade-out');
+
+            setTimeout(() => {
+                window.location.href = "profile_index.html"; // REDIRECT DI SINI
+            }, 1000);
+        }
+
+        // Cursor Trail
+        document.addEventListener('mousemove', (e) => {
+            const trail = document.createElement('div');
+            trail.style.position = 'fixed';
+            trail.style.width = '6px';
+            trail.style.height = '6px';
+            trail.style.borderRadius = '50%';
+            trail.style.background = 'rgba(6, 182, 212, 0.5)';
+            trail.style.left = e.clientX + 'px';
+            trail.style.top = e.clientY + 'px';
+            trail.style.pointerEvents = 'none';
+            trail.style.zIndex = '9998';
+            trail.style.animation = 'trailFade 0.8s ease-out forwards';
+
+            document.body.appendChild(trail);
+
+            setTimeout(() => trail.remove(), 800);
+        });
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes trailFade {
+                to { transform: scale(0); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+
+</body>
+</html>
